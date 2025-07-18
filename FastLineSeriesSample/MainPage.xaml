@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:local="clr-namespace:FastLineSeriesSample"
+             x:Class="FastLineSeriesSample.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
+    <local:CustomFastLineChart ItemsSource="{Binding DataSource}"
+                               XBindingPath="Date" 
+                               YBindingPath="Metric"
+                               Margin="10,20,0,20">
+        
+        <local:CustomFastLineChart.XAxes>
+            <chart:DateTimeAxis ShowMajorGridLines="False" EdgeLabelsDrawingMode="Center">
+                <chart:DateTimeAxis.LabelStyle>
+                    <chart:ChartAxisLabelStyle FontAttributes="Bold" />
+                </chart:DateTimeAxis.LabelStyle>
+            </chart:DateTimeAxis>
+        </local:CustomFastLineChart.XAxes>
+
+        <local:CustomFastLineChart.YAxes>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.LabelStyle>
+                    <chart:ChartAxisLabelStyle FontAttributes="Bold" />
+                </chart:NumericalAxis.LabelStyle>
+            </chart:NumericalAxis>
+        </local:CustomFastLineChart.YAxes>
+        
+    </local:CustomFastLineChart>
+
+</ContentPage>
