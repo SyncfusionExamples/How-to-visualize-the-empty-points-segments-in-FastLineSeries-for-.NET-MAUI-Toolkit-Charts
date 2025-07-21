@@ -19,12 +19,12 @@ Follow the step-by-step instructions in this practical workaround to address the
 **Output**
 <img width="1919" height="947" alt="Sample screenshot showing a fast line series with gaps for empty points" src="https://github.com/user-attachments/assets/e84dbe8b-94c3-4986-9eb9-4ba8d48db970" />
 
-Refer to the KB article on [how to visualize the empty points segments in FastLineSeries for .NET MAUI Toolkit Charts]() for better understanding along with relevant code snippets.
-
 ## Troubleshooting
 
 ### Path Too Long Exception
 
 If you are facing a "Path too long" exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
+
+Refer to the KB article on [how to visualize the empty points segments in FastLineSeries for .NET MAUI Toolkit Charts]() for better understanding along with relevant code snippets.
 
 
