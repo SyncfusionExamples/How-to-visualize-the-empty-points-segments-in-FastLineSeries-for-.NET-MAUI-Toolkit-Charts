@@ -2,9 +2,9 @@
 
 This article explains how to visualize gaps for empty points in the [FastLineSeries](https://help.syncfusion.com/maui-toolkit/cartesian-charts/fastline) of the .NET MAUI Toolkit [SfCartesianChart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts).
 
-By default, [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) fails to render if the Y-axis data contains even a single null or double.NaN value. Built-in support for [Empty Points](https://help.syncfusion.com/maui-toolkit/cartesian-charts/emptypoints) is limited in Fast series types due to performance considerations, which can make it challenging to represent visual breaks in line data.
+By default, [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) excludes null or double.NaN values, as built-in support for [Empty Points](https://help.syncfusion.com/maui-toolkit/cartesian-charts/emptypoints) is limited in fast-rendering series types to maintain performance. As a result, representing visual breaks in fast line series data can be challenging.
 
-Follow the step-by-step instructions in this practical workaround to address the limitation, enabling the preservation of both rendering performance and visual clarity when plotting fast line charts with missing values.
+Follow the step-by-step instructions to effectively address the limitation, ensuring both high rendering performance and visual clarity when plotting fast line charts with missing values.
 
 **Step 1**: Create a **CustomFastLineChart** class by extending the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) control.
 
@@ -25,6 +25,6 @@ Follow the step-by-step instructions in this practical workaround to address the
 
 If you are facing a "Path too long" exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
 
-Refer to the KB article on [how to visualize the empty points segments in FastLineSeries for .NET MAUI Toolkit Charts]() for better understanding along with relevant code snippets.
+Refer to the KB article on [how to visualize the empty points segments in FastLineSeries for .NET MAUI Toolkit Charts](https://support.syncfusion.com/kb/article/20659/how-to-visualize-the-empty-points-segments-in-fastlineseries-for-net-maui-toolkit-charts) for better understanding along with relevant code snippets.
 
 
